@@ -1,0 +1,116 @@
+/* Hero Section */
+.hero {
+    height: calc(100vh - 60px); /* Ajustar la altura a 100vh para una mejor visualización */
+    background-image: url('/assets/img/HandHeld.JPEG'); /* Imagen de fondo */
+    background-size: 150%; /* Zoom inicial de 200% */
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: background-size 0.3s ease-out;
+    padding: 0 20px; /* Padding lateral */
+    margin-top: 60px; /* Asegura que no quede oculto bajo el header */
+  }
+  
+  .hero-content {
+    color: white;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    padding: 0 20px;
+  }
+  
+  /* Estilo del título */
+  .hero-content h1 {
+    font-size: 3rem; /* Tamaño grande para pantallas grandes */
+    letter-spacing: 2px;
+    text-shadow: 0px 0px 10px rgba(141, 5, 5, 0.7);
+    animation: fadeIn 2s ease-in-out;
+    margin: 0;
+  }
+  
+  /* Información de la tarta (Info Section) */
+  .info-section {
+    background-color: #f8f9fa;
+    padding: 60px 20px; /* Aumentar el padding superior para más espacio */
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s ease-in-out;
+  }
+  
+  /* Mockup de datos */
+  .info-section h2 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .info-section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #555;
+    margin: 10px 0;
+  }
+  
+  /* Animación al aparecer el div de datos */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Ajustes de responsividad */
+  @media (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 2.5rem; /* Reducir el tamaño del texto en pantallas más pequeñas */
+      padding: 10px;
+    }
+  
+    .hero {
+      background-position: top; /* Ajustar la imagen para pantallas móviles */
+      background-size: 180%; /* Ajustar el tamaño de la imagen */
+    }
+  
+    .hero-content {
+      max-width: 90%; /* Limitar el ancho del texto */
+      padding: 15px;
+    }
+  
+    .info-section h2 {
+      font-size: 1.5rem;
+    }
+  
+    .info-section p {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero-content h1 {
+      font-size: 2rem; /* Reducir aún más el tamaño del texto en móviles pequeños */
+    }
+  
+    .hero {
+      height: calc(100vh - 60px); /* Ajustar la altura para pantallas pequeñas */
+      background-size: 160%; /* Ajustar el tamaño de la imagen */
+    }
+  
+    .hero-content {
+      max-width: 95%; /* Limitar el ancho del texto */
+    }
+  
+    .info-section h2 {
+      font-size: 1.3rem;
+    }
+  
+    .info-section p {
+      font-size: 0.9rem;
+    }
+  }
+  

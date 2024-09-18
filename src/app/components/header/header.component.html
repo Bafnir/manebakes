@@ -1,0 +1,12 @@
+<nav>
+    <div class="logo">
+      <a routerLink="/">Mane</a>
+    </div>
+    <div class="menu-toggle" (click)="toggleMenu()">&#9776;</div>
+    <ul [class.active]="menuActive">
+      <li><a routerLink="/" (click)="toggleMenu()">Inicio</a></li>
+      <li><a routerLink="/sobre-nosotros" (click)="toggleMenu()">Sobre Nosotros</a></li>
+      <li><a routerLink="/pedidos" (click)="toggleMenu()">Pedidos</a></li>
+    </ul>
+  </nav>
+  

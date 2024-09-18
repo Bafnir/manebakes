@@ -1,0 +1,108 @@
+.pedidos {
+    padding: 40px 20px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    margin-top: 1rem;
+  }
+  
+  .pedidos-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .pedidos-container h1, h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .pedidos-container p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+  
+  .contact {
+    margin: 40px 0;
+  }
+  
+  .whatsapp-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #25d366;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .whatsapp-button img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+  }
+  
+  .whatsapp-button:hover {
+    background-color: #1ebc5a;
+  }
+  
+  .future {
+    margin-top: 40px;
+  }
+  
+  .future h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .future p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
+  }
+  
+  /* Responsive para pantallas más pequeñas */
+  @media (max-width: 768px) {
+    .pedidos-container h1, .pedidos-container h2 {
+      font-size: 2rem;
+    }
+  
+    .pedidos-container p {
+      font-size: 1rem;
+    }
+  
+    .whatsapp-button {
+      font-size: 1rem;
+      padding: 8px 15px;
+    }
+  
+    .whatsapp-button img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .pedidos-container h1, .pedidos-container h2 {
+      font-size: 1.8rem;
+    }
+  
+    .pedidos-container p {
+      font-size: 0.9rem;
+    }
+  
+    .whatsapp-button {
+      font-size: 0.9rem;
+      padding: 7px 12px;
+    }
+  
+    .whatsapp-button img {
+      width: 18px;
+      height: 18px;
+    }
+  }
+  

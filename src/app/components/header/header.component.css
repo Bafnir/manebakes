@@ -1,0 +1,79 @@
+/* Estilos para pantallas grandes */
+nav {
+    position: fixed; /* Anclado en la parte superior */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Asegura que esté por encima del contenido */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Añadir sombra para mayor visibilidad */
+  }
+  
+  nav .logo a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 400; /* Peso normal */
+    transition: font-weight 0.3s ease; /* Transición suave para el cambio de grosor */
+  }
+  
+  nav ul li a:hover {
+    font-weight: 500; /* Hacer un poco más negrita la fuente al hacer hover */
+  }
+  
+  /* Estilos para pantallas pequeñas */
+  .menu-toggle {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    nav ul {
+      display: block;
+      flex-direction: column;
+      position: absolute;
+      top: 50px; /* Asegura que el menú se despliegue debajo del header */
+      right: 0;
+      background-color: #f8f9fa;
+      width: 100%;
+      text-align: center;
+      padding: 0;
+      max-height: 0;
+      opacity: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease-in-out, opacity 0.5s ease-in-out;
+    }
+  
+    nav ul.active {
+      max-height: 300px; /* Ajusta esto según el contenido del menú */
+      opacity: 1;
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+  
+    nav ul li {
+      margin: 10px 0;
+    }
+  }
+  
